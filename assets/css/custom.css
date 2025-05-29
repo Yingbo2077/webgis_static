@@ -1,0 +1,78 @@
+#header {
+    position: relative;
+    background-image: url("../../images/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    
+    /* 关键修改：使用 flex 实现完美垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; /* 设置一个固定高度 */
+    padding: 0; /* 移除 padding，改用 min-height 控制高度 */
+}
+
+#header .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; /* 内部上下 padding 相等 */
+}
+
+#header header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em; /* 控制元素间的垂直间距 */
+}
+
+#header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin: 0; /* 移除默认 margin */
+}
+
+#header header > p {
+    font-size: 1.25em;
+    margin: 0; /* 移除默认 margin */
+    padding: 0 20px; /* 添加水平 padding 防止文字贴边 */
+}
+
+/* 按钮样式调整 */
+#header .button {
+    display: inline-block;
+    border-radius: 100%;
+    width: 4.5em;
+    height: 4.5em;
+    line-height: 4.5em;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0.8em 0; /* 上下 margin 相等 */
+}
+
+/* 分隔线调整 */
+#header hr {
+    margin: 0.8em auto; /* 上下 margin 相等 */
+    width: 80%;
+    border: 0;
+    border-top: 1px solid rgba(192, 192, 192, 0.35);
+}
+
+/* 首页特殊样式 */
+body.homepage #header {
+    min-height: 300px;
+}
+
+body.homepage #header h1 {
+    font-size: 3em;
+}
