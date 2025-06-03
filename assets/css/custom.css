@@ -76,3 +76,5 @@ body.homepage #header {
 body.homepage #header h1 {
     font-size: 3em;
 }
+
+/* 删除所有footer相关样式 */
