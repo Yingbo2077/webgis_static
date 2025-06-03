@@ -1,0 +1,27 @@
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <hr />
+        <div class="row">
+            <div class="col-6">
+                <!-- Polimi Logo Link -->
+                <a href="https://www.polimi.it/" target="_blank">
+                    <img src="images/polimi.jpg" alt="Politecnico di Milano" class="polimi-logo">
+                </a>
+            </div>
+            <div class="col-6">
+                <!-- Contact Section -->
+                <section class="contact">
+                    <header>
+                        <h3>Contact</h3>
+                    </header>
+                    <ul>
+                        <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a href="mailto:support@example.com">support@example.com</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div> 
